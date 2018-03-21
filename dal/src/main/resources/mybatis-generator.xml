@@ -11,7 +11,7 @@
         <commentGenerator>
             <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
             <property name="javaFileEncoding" value="UTF-8" />
-			<property name="suppressAllComments" value="false" />
+			<property name="suppressAllComments" value="true" />
 		</commentGenerator>
 		<!-- 配置数据库连接 -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
@@ -25,7 +25,7 @@
 		</javaTypeResolver>
 
 		<!-- 指定javaBean生成的位置 -->
-		<javaModelGenerator targetPackage="com.fastboot.entity"
+		<javaModelGenerator targetPackage="com.fastboot.bean.entity"
 			targetProject="bean\src\main\java">
             <!-- 从数据库返回的值被清理前后的空格 -->
             <property name="trimStrings" value="true" />
